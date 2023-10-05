@@ -2,6 +2,7 @@ body {
     overflow: hidden;
     position: relative;
     background-image: url("../assets/img/bg.jpg");
+    background-attachment: fixed;
     backdrop-filter: blur(2px);
     background-size: cover;
     background-position-y: center;
@@ -9,25 +10,32 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
+    height: 100vh;
     color: #000;
 }
 
+/*.main-cont {*/
+/*    position: sticky;*/
+/*    top: 2em;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    min-width: 100vw;*/
+/*}*/
 
 .top-nav{
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 30em;
     padding-right: 0.55em;
+    padding-left: 1em;
+
 }
 
 .nav-cont {
-    /*display: flex;*/
-    position: sticky;
-    top: 2em;
     background-color: #fff;
-    padding: 1.5em;
+    /*padding: 1.5em;*/
     border-radius: 1em;
     /*margin-top: 4em;*/
     padding-block: 0.5em;
@@ -35,11 +43,32 @@ body {
 }
 
 #profile {
+
     position: absolute;
-    right: 5vw;
-    margin-top: 4em;
-    padding-block: 0.5em;
+    top: 1.5em;
+    right: 3vw;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
 }
+
+#prof-img{
+    /*margin-top: 2.3em;*/
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
+}
+
+#profile:hover {
+    cursor: pointer;
+}
+
+/*#profile img {*/
+/*    height: 3em;*/
+/*    width: 3em;*/
+/*}*/
 
 
 
@@ -67,7 +96,7 @@ body {
     /*background-color: #000;*/
     background-color: #EEEEEE;
     padding-inline: 2em;
-    padding-block: 1.2em;
+    padding-block: 1em;
     border-radius: 0.6em;
 }
 
@@ -76,10 +105,6 @@ body {
 }
 
 
-#mid {
-
-}
-
 #btm-nav {
     /*position: absolute;*/
     margin-bottom: 5em;
@@ -87,5 +112,5 @@ body {
 
 
 #mid {
-    height: 1000px;
+    /*height: 1000px;*/
 }
