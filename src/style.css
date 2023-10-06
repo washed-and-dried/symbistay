@@ -43,6 +43,9 @@ body {
     padding-block: 0.5em;
 
 }
+.nav-text:hover{
+    background-color: #c8b7c9;
+}
 
 #profile {
 
@@ -88,6 +91,11 @@ body {
     
 }
 
+
+.images{
+    padding-left: 85px;
+}
+
 .images img{
     height: 14em;
     width: 8em;
@@ -108,11 +116,15 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width: 70%;
+    
 }
 
 .nav-text {
     font-family: Inter, sans-serif;
     font-weight: bold;
+    padding-inline: 1.8em;
+    padding-block: 0.8em;
+    
 }
 
 .active {
