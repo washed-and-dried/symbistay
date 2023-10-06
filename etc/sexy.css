@@ -1,0 +1,14 @@
+.mid-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.images img{
+    width: 180px;
+    border-radius: 4%;
+    padding-top: 250px;
+}

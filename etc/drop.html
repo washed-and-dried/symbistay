@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Enlarger on Hover</title>
+  <style>
+    #container {
+      position: relative;
+      overflow: hidden;
+      width: 200px; 
+      transition: width 0.3s ease;
+    }
+
+    #image-container {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;  
+    }
+
+    #text {
+      position: absolute;
+      size: 60px;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      color: rgb(222, 22, 22); 
+    }
+
+    #container:hover {
+      width: 300px; 
+    }
+
+    #container:hover #image-container {
+      transform: scale(1.2); 
+    }
+
+    #container:hover #text {
+      opacity: 1;
+      size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="image-container">
+    <img src="media/myFoto.jpg" alt="Image">
+  </div>
+  <div id="text">soham claps</div>
+</div>
+
+</body>
+</html>
