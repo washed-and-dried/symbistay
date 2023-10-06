@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Tektur&display=swap');
 
+:root {
+    --img-ar: 0.74;
+    --img-ht: 15em;
+}
+
 body {
     overflow: hidden;
     position: relative;
@@ -73,27 +78,21 @@ body {
 /*}*/
 
 .mid-text {
-    font-size: 64px;
+    font-size: 4em;
     color: #fff;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 800;
+
 }
 
 .hotel-text{
     background: linear-gradient(214deg, #FC82FF 19.35%, #D0CCFF 47.43%);
     -webkit-background-clip: text;
     background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
-.images img{
-    height: 14em;
-    width: 8em;
-    object-fit: cover;
-    border-radius: 10px ;
-}
 
 
 
@@ -144,8 +143,15 @@ body {
 
 }
 
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
 .images img{
-    width: 180px;
-    border-radius: 4%;
-    padding-top: 1em;
+    /*height: 14em;*/
+    height: var(--img-ht);
+    width: calc(var(--img-ar) * var(--img-ht));
+    object-fit: cover;
+    border-radius: 1.8em;
 }
