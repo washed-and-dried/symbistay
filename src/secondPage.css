@@ -65,70 +65,71 @@ body {
     justify-content: space-between;
 }
 
-.mid-container {
-    .date-pickers {
-        outline: 0;
-        border: 0;
-        background: transparent;
-    }
+.mid-container {}
 
-    #guest-num {
-        background-color: transparent;
-        outline: 0;
-        border: 0;
-    }
+.date-pickers {
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
 
-    /* lest we want to trigger the date-pickers through the arrows
+#guest-num {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+/* lest we want to trigger the date-pickers through the arrows
 ::-webkit-calendar-picker-indicator {
-    display: none;
+display: none;
 }
 */
 
-    .centerProp {
-        display: flex;
-        justify-content: center;
-        margin-top: 3em;
-        /*min-width: 65vw;*/
-        gap: 1em;
+.centerProp {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    /*min-width: 65vw;*/
+    gap: 1em;
 
-    }
+}
 
-    .mid-right {
-        background-color: #fff;
-        border-radius: 1em;
-        padding: 2em;
-    }
+.mid-right {
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 2em;
+}
 
-    .mid-text {
-        /*margin-block: 0.5em;*/
-        font-size: 64px;
-        color: #000;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 800;
-    }
+.mid-text {
+    /*margin-block: 0.5em;*/
+    font-size: 64px;
+    color: #000;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+}
 
-    .centerProp {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2em;
-        justify-content: flex-start;
-        align-content: flex-start;
-        max-width: 50vw;
-    }
+.centerProp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 50vw;
+}
 
-    .centerProp img {
-        position: relative;
-        /*height: 20vh;*/
-        /*width: 10vw;*/
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-        border-radius: 4%;
-    }
+.centerProp img {
+    position: relative;
+    /*height: 20vh;*/
+    /*width: 10vw;*/
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 4%;
+}
 
-    .arrow {
-        /* padding-left: 200px; */
-        display: flex;
-        align-items: end;
-        justify-content: right;
-    }
+.arrow {
+    /* padding-left: 200px; */
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
