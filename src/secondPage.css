@@ -87,15 +87,17 @@ body {
 }
 
 .list-col {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .centerProp {
     display: flex;
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
-    gap: 2em;
-    max-width: 40.5vw;
+    gap: 1.5em;
+    max-width: 50vw;
 }
 
 .centerProp img {
