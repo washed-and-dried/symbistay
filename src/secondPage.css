@@ -71,6 +71,8 @@ body {
 }
 
 .mid-right {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 1em;
     padding: 2em;
@@ -84,13 +86,16 @@ body {
     font-weight: 800;
 }
 
+.list-col {
+
+}
+
 .centerProp {
     display: flex;
-    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+    /*align-content: flex-start;*/
     gap: 2em;
-    justify-content: flex-start;
-    align-content: flex-start;
-    max-width: 50vw;
+    max-width: 40.5vw;
 }
 
 .centerProp img {
