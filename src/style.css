@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Tektur&display=swap');
 
-:root {
-    --img-ar: 0.74;
-    --img-ht: 15em;
-}
-
 body {
     overflow: hidden;
     position: relative;
@@ -48,6 +43,9 @@ body {
     padding-block: 0.5em;
 
 }
+.nav-text:hover{
+    background-color: #c8b7c9;
+}
 
 #profile {
 
@@ -78,21 +76,32 @@ body {
 /*}*/
 
 .mid-text {
-    font-size: 4em;
+    font-size: 64px;
     color: #fff;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 800;
-
 }
 
 .hotel-text{
     background: linear-gradient(214deg, #FC82FF 19.35%, #D0CCFF 47.43%);
     -webkit-background-clip: text;
     background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
+
+.images{
+    padding-left: 85px;
+}
+
+.images img{
+    height: 14em;
+    width: 8em;
+    object-fit: cover;
+    border-radius: 10px ;
+}
 
 
 
@@ -107,11 +116,15 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width: 70%;
+    
 }
 
 .nav-text {
     font-family: Inter, sans-serif;
     font-weight: bold;
+    padding-inline: 1.8em;
+    padding-block: 0.8em;
+    
 }
 
 .active {
@@ -143,15 +156,8 @@ body {
 
 }
 
-.images {
-    display: flex;
-    justify-content: space-between;
-}
-
 .images img{
-    /*height: 14em;*/
-    height: var(--img-ht);
-    width: calc(var(--img-ar) * var(--img-ht));
-    object-fit: cover;
-    border-radius: 1.8em;
+    width: 180px;
+    border-radius: 4%;
+    padding-top: 1em;
 }
