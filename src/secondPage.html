@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="secondPage.css">
     <link rel="stylesheet" href="nav-style.css">
     <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
     <title>Second Page</title>
 </head>
+
 <body>
-
-<div class="top-nav">
-    <div id="nav-logo">Symbi</div>
-    <div id="nav-items">
-        <div class="nav-text">Home</div>
-        <div class="nav-text">Hotels</div>
-        <div class="nav-text">Hostels</div>
-        <div class="nav-text active">Account</div>
+    <div class="top-nav">
+        <div id="nav-logo">Symbi</div>
+        <div id="nav-items">
+            <div class="nav-text">Home</div>
+            <div class="nav-text">Hotels</div>
+            <div class="nav-text">Hostels</div>
+            <div class="nav-text active">Account</div>
+        </div>
     </div>
-</div>
-<div id="profile"><img id="prof-img" src="../assets/img/dragonjammies.png" alt=""></div>
+    <div id="profile">
+        <img id="prof-img" src="../assets/img/dragonjammies.png" alt="">
+        <dialog id="account-dialog-box">
+            <div>
+                <h4>Something goes here</h4>
+                <p>also here</p>
+            </div>
+        </dialog>
+    </div>
 
-<div class="mid-container">
+    <div class="centerProp">
+        <div class="small-box">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+            <img alt="ahh" src="../assets/img/chen-zy-1hVOdvDfHt8-unsplash.jpg">
+        </div>
+    </div>
 
     <div class="hotel-search-cont">
         <div class="checkin-cont">
-            <label for="checkin-date">check in</label>
-            <span>
-            <input id="checkin-date" type="date">
-            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">
-        </span>
+            <label for="checkin-date">Check in</label>
+            <span class="checkin-date-cont">
+                <input id="checkin-date" class="date-pickers" type="date">
+                <img alt="search-hotel" class="arrow date-picker-arrow" src="../assets/img/arrow-down-3101 (2).png">
+            </span>
         </div>
         <div class="checkout-cont">
-            <label for="checkout-date">check out</label>
+            <label for="checkout-date">Check out</label>
             <span>
-            <input id="checkout-date" type="date">
-            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">
-        </span>
+                <input id="checkout-date" class="date-pickers" type="date">
+                <img alt="search-hotel" class="arrow date-picker-arrow" src="../assets/img/arrow-down-3101 (2).png">
+            </span>
         </div>
         <div class="guestnum-cont">
-            <label for="guest-num">guests</label>
+            <label for="guest-num">Guests</label>
             <span>
-            <input type="number" name="guest-num" id="guest-num">
-            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">
+                <input type="number" name="guest-num" id="guest-num" value="2">
+                <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">
             </span>
         </div>
     </div>
@@ -66,8 +88,8 @@
         </div>
     </div>
 
-</div>
-
+    </div>
 
 </body>
+
 </html>
