@@ -42,19 +42,39 @@ body {
 
 .checkin-cont > span {
     display: flex;
-    gap: 0.25em;
+    justify-content: space-between;
 }
 
 .checkout-cont > span {
     display: flex;
     gap: 0.25em;
+    justify-content: space-between;
 }
 
 .guestnum-cont > span {
     display: flex;
     align-items: center;
     gap: 0.25em;
+    justify-content: space-between;
 }
+
+.date-pickers {
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
+
+#guest-num{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+/* lest we want to trigger the date-pickers through the arrows
+::-webkit-calendar-picker-indicator {
+    display: none;
+}
+*/
 
 .centerProp {
     display: flex;
