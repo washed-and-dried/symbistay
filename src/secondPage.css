@@ -20,24 +20,190 @@ body {
 }
 
 
+/*nav styling*/
+.top-nav {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30em;
+    padding-right: 0.55em;
+    padding-left: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    padding-block: 0.5em;
+}
+
+.nav-text {
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    padding-inline: 1.8em;
+    padding-block: 0.8em;
+}
+
+.nav-text:hover {
+    background-color: #c8b7c9;
+}
+
+.active {
+    /*background-color: #000;*/
+    background-color: #EEEEEE;
+    padding-inline: 2em;
+    padding-block: 1em;
+    border-radius: 0.6em;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70%;
+}
+
+#profile {
+    position: absolute;
+    top: 1.5em;
+    right: 3vw;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
+}
+
+#profile:hover {
+    cursor: pointer;
+}
+
+#prof-img {
+    /*margin-top: 2.3em;*/
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
+}
+
+/*EOF nav styling*/
+
+
+/*Search-container styling*/
+
+.bottom {
+    padding: 0 0 2em 0;
+    margin: 0;
+    border: 0;
+}
+
+.search-container {
+    position: sticky;
+    top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 20em;
+    align-items: center;
+    /*gap: 0.5em;*/
+}
+
+.search-items {
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    gap: 0.5em;
+
+}
+
+.search-item-box {
+    padding: 0.4em 0.4em 0.7em 1em;
+    border-radius: 0.7em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-text {
+    color: #858282;
+}
+
+.search-option-text {
+    color: #000;
+}
+
+input, option {
+    border: 0;
+    max-width: 8em;
+    margin-right: 1em;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#guests {
+    max-width: 4em;
+    margin-right: 1em;
+    border: 0;
+}
+
+
+.search-hr {
+    background-color: #D9D9D9;
+    margin-top: 0.5em;
+    min-width: 0.1em;
+    max-height: 1.5em;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 3em;
+    /*padding: 4.5px 6px 4.5px 8px;*/
+
+    border-radius: 0.5em;
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
+.search-icon svg{
+    width: 2.5em;
+}
+
+/*EOF search-container styling*/
+
+
 .hotel-search-cont {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
     /* padding-right: 1200px; */
     /* justify-content: left; */
     /*position: absolute;*/
     left: 0;
     top: 50%;
     /*transform: translateY(-50%);*/
-    border: 30px;
-    padding-bottom: 290px;
+    /*border: 30px;*/
+    /*padding-bottom: 290px;*/
 }
 
 .checkin-cont, .checkout-cont, .guestnum-cont {
     width: 250px;
     padding: 20px;
-    border: 2px solid #3498db;
+    /*border: 2px solid #3498db;*/
     border-radius: 8px;
     background-color: #ecf0f1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -88,12 +254,13 @@ body {
 
 .list-col {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5em;
 }
 
 .centerProp {
     display: flex;
+    flex-direction: column;
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
     gap: 1.5em;
@@ -116,3 +283,76 @@ body {
     align-items: end;
     justify-content: right;
 }
+
+
+/*hotel-list-card styling*/
+
+.hotel-list-card {
+    padding: 0;
+    /*width: 225px;*/
+    /*height: 225px;*/
+    /*margin-bottom: 10em;*/
+
+
+
+}
+
+
+.hotel-list-card {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    flex-shrink: 0;
+}
+
+.bg-img img{
+    width: 14.0625rem;
+    height: 14.0625rem;
+    object-fit: cover;
+    opacity: 50%;
+
+}
+
+.bg-img {
+    height: 14.0625rem;
+    width: 14.0625rem;
+    flex-shrink: 0;
+
+    border-radius: 1rem;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(85, 83, 83, 0.61) 89.48%), url("../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg"), lightgray 50% / cover no-repeat;
+    background-size: 14.0625rem auto;
+    background-position: center center;
+    box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1em;
+    height: 95%;
+    color: #fff;
+
+    font-family: Red Hat Display, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-address {
+    color: #DFDFDF;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.card-price {
+    color: #DFDFDF;
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+
+/*EOF hotel-list-card styling*/
