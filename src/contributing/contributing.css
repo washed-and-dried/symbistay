@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Tektur&display=swap');
+
+body {
+    /*overflow: hidden;*/
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("../../assets/img/bg.jpg");
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    gap: 8vh;
+    /*height: 100vh;*/
+    color: #000;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*nav styling*/
+.top-nav {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30em;
+    padding-right: 0.55em;
+    padding-left: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    padding-block: 0.5em;
+}
+
+.nav-text {
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    padding-inline: 1.8em;
+    padding-block: 0.8em;
+}
+
+.nav-text:hover {
+    cursor: pointer;
+}
+
+
+.active {
+    /*background-color: #000;*/
+    /*background-color: #EEEEEE;*/
+    padding-inline: 2em;
+    padding-block: 1em;
+    /*border-radius: 0.6em;*/
+    border-radius: 0.6875rem;
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
+}
+
+
+#nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70%;
+}
+
+#profile {
+    position: absolute;
+    top: 1.5em;
+    right: 3vw;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
+}
+
+#profile:hover {
+    cursor: pointer;
+}
+
+#prof-img {
+    /*margin-top: 2.3em;*/
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 4em;
+}
+
+/*EOF nav styling*/
+
+
+/*Search-container styling*/
+
+.bottom {
+    padding: 0 0 2em 0;
+    margin: 0;
+    border: 0;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.4em 0.4em 0.4em 1em;
+    border-radius: 0.7em;
+    gap: 0.5em;
+}
+
+.search-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+    gap: 0.8em;
+
+}
+
+.search-item-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-text {
+    color: #858282;
+}
+
+.search-option-text {
+    color: #000;
+}
+
+input, option {
+    border: 0;
+    max-width: 8em;
+    margin-right: 1em;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#guests {
+    max-width: 4em;
+    margin-right: 1em;
+    border: 0;
+}
+
+
+.search-hr {
+    background-color: #D9D9D9;
+    margin-top: 0.5em;
+    min-width: 0.1em;
+    max-height: 1.5em;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 3em;
+    /*padding: 4.5px 6px 4.5px 8px;*/
+
+    border-radius: 0.5em;
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
+.search-icon svg {
+    width: 2.5em;
+}
+
+/*EOF search-container styling*/
+
+/*Profile Dropdown styling*/
+
+.profile-dropdown {
+    display: inline-flex;
+    padding: 0.7em 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7em;
+
+    border-radius: 0.7em;
+    background: #FFF;
+    box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 0.25);
+}
+
+.profile-dropdown button {
+    border: 0;
+    background-color: #fff;
+    transition: background-color ease-in-out 300ms;
+
+    color: #000;
+    font-family: Red Hat Display, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0.3em;
+}
+
+.profile-dropdown button:hover {
+    background-color: #cccccc;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+/*EOF profile dropdown styling*/
+
+/*hotel-list-card styling*/
+
+.hotel-list-card {
+    padding: 0;
+    /*width: 225px;*/
+    /*height: 225px;*/
+    /*margin-bottom: 10em;*/
+
+
+}
+
+
+.hotel-list-card {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    flex-shrink: 0;
+    margin-bottom: 4em;
+}
+
+.bg-img img {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    object-fit: cover;
+    /*opacity: 50%;*/
+
+}
+
+.bg-img {
+    background-color: #fff;
+    /*border-radius: 0.5em;*/
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    /*object-fit: cover;*/
+}
+
+/*.bg-img {*/
+/*    height: 14.0625rem;*/
+/*    width: 14.0625rem;*/
+/*    flex-shrink: 0;*/
+
+/*    border-radius: 1rem;*/
+/*    !*background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(85, 83, 83, 0.61) 89.48%), url("../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg"), lightgray 50% / cover no-repeat;*!*/
+/*    !*background-size: 14.0625rem auto;*!*/
+/*    !*background-position: center center;*!*/
+/*    box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 1em 0 1em;
+    height: 95%;
+    color: #000;
+    padding-bottom: 0;
+    /*background-color: #fff;*/
+
+    font-family: Red Hat Display, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-address {
+    color: #3b3b3b;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.card-price {
+    color: #3b3b3b;
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+
+/*EOF hotel-list-card styling*/
+
+
+/*Footer style*/
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    margin-top: 5vh;
+
+    background-color: #EFE7E7;
+    display: flex;
+
+    width: 100vw;
+    /*height: 100vh;*/
+    max-width: 100%; /* added */
+
+    /*height: 13.5625rem;*/
+    padding: 2.5625rem 4.375rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9.3125rem;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title {
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 0.5em;
+}
+
+.footer-col svg {
+    /*width: 22px;*/
+    /*height: 22px;*/
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: row;
+
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*EOF Footer Style*/
+
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    /*margin-top: 15vh;*/
+    padding: 1em 2em 2em 2em;
+
+}
+
+.cont-title {
+    color: #232222;
+    text-align: center;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /*padding-bottom: 0.2em;*/
+}
+
+
+svg {
+    fill: #000;
+}
+
+.git-sym {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.git-sym svg {
+    width: 2.875rem;
+    height: 2.875rem;
+}
+
+.git-sym-text {
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dev-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.dev-img {
+    border-radius: 100em;
+    width: 15em;
+    height: 15em;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.dev-text {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

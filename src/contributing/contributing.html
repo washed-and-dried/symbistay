@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="consistent/nav-style.css">
-    <link rel="stylesheet" href="consistent/utility.css">
-    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">
-
-    <script src="./index.js" defer></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="../consistent/utility.css">
+    <link rel="stylesheet" href="../contributing/contributing.css">
+    <!--    <link rel="stylesheet" href="nav-style.css">-->
+    <link rel="shortcut icon" href="../../assets/img/dragonjammies.png" type="image/x-icon">
+    <script src="../index.js" defer></script>
+    <title>Developers</title>
 </head>
-<body>
 
+<body>
 
 <!--<div class="main-cont">-->
 <div class="top-nav">
@@ -25,14 +25,14 @@
         </svg>
     </div>
     <div id="nav-items">
-        <a href="./index.html"><div class="nav-text active">Home</div></a>
-        <a href="hotels/secondPage.html"><div class="nav-text">Hotels</div></a>
-        <a href="contact/contact.html"><div class="nav-text">Contact</div></a> <!--fixme: where the fuck are these?-->
+        <a href="../index.html"><div class="nav-text">Home</div></a>
+        <a href="../hotels/secondPage.html"><div class="nav-text">Hotels</div></a>
+        <a href="../contact/contact.html"><div class="nav-text">Contact</div></a> <!--fixme: where the fuck are these?-->
         <!--        <a href="./profile.html"><div class="nav-text">Profile</div></a>-->
-        <a href="developers/developers.html"><div class="nav-text">Profile</div></a> <!--fixme: for now showing the dev page-->
+        <a href="../developers/developers.html"><div class="nav-text active">Profile</div></a> <!--fixme: for now showing the dev page-->
     </div>
 </div>
-<div id="profile"><img id="prof-img" src="../assets/img/dragonjammies.png" alt="">
+<div id="profile"><img id="prof-img" src="../../assets/img/dragonjammies.png" alt="">
     <dialog id="account-dialog-box">
         <div class="profile-dropdown">
             <button class="btn" id="account">Account</button>
@@ -41,60 +41,24 @@
         </div>
     </dialog>
 </div>
-<!--</div>-->
 
-<div id="mid">
-    <div class="mid-hotel-text">BOOK YOUR DESIRED <span class="hotel-text">HOTEL</span></div>
-    <div class="images">
-        <img alt="kuch-bhi" src="../assets/img/tamara-malaniy-Hw2wn2A930s-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/tamara-malaniy-pOZCU9IjzKA-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/serena-repice-lentini-jdFwG_dW934-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/richard-stachmann-tpSDOTkNrTc-unsplash.jpg">
+<div class="main-cont">
+    <div class="cont-title">
+        Contributing
     </div>
-</div>
-
-
-<div class="bottom">
-
-    <div class="search-container">
-
-        <div class="search-items">
-            <div class="search-item-box">
-                <div class="search-text"><label for="location">Where to?</label></div>
-                <div class="search-option-text">
-                    <select name="" id="location">
-                        <option value="Bali">Berlin</option>
-                        <option value="Bali">Paris</option>
-                        <option value="Bali">London</option>
-                        <option value="Bali">Madrid</option>
-                        <option value="Bali">Rome</option>
-                    </select>
-                </div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkin">Check In</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkin"></div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkout">Check Out</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkout"></div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="guests">Guests</label></div>
-                <div class="search-option-text"><input type="number" name="" id="guests" placeholder="1"></div>
-            </div>
-        </div>
-
-        <div class="search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
-                <path d="M39.2 42.5L26.6 29.9C25.6 30.7 24.45 31.3333 23.15 31.8C21.85 32.2667 20.4667 32.5 19 32.5C15.3667 32.5 12.2917 31.2417 9.775 28.725C7.25833 26.2083 6 23.1333 6 19.5C6 15.8667 7.25833 12.7917 9.775 10.275C12.2917 7.75833 15.3667 6.5 19 6.5C22.6333 6.5 25.7083 7.75833 28.225 10.275C30.7417 12.7917 32 15.8667 32 19.5C32 20.9667 31.7667 22.35 31.3 23.65C30.8333 24.95 30.2 26.1 29.4 27.1L42 39.7L39.2 42.5ZM19 28.5C21.5 28.5 23.625 27.625 25.375 25.875C27.125 24.125 28 22 28 19.5C28 17 27.125 14.875 25.375 13.125C23.625 11.375 21.5 10.5 19 10.5C16.5 10.5 14.375 11.375 12.625 13.125C10.875 14.875 10 17 10 19.5C10 22 10.875 24.125 12.625 25.875C14.375 27.625 16.5 28.5 19 28.5Z"
-                      fill="black"/>
-            </svg>
-        </div>
-
+        <img src="../../assets/ico/qr.svg" alt="">
+    <div class="git-sym">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+            <g clip-path="url(#clip0_107_215)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9315 0.5C10.251 0.5 0 11.0417 0 24.0831C0 34.5079 6.56814 43.3322 15.6799 46.4554C16.8191 46.6902 17.2364 45.948 17.2364 45.3236C17.2364 44.7769 17.1988 42.9029 17.1988 40.9503C10.8199 42.3562 9.49149 38.139 9.49149 38.139C8.46635 35.4058 6.94741 34.7034 6.94741 34.7034C4.85957 33.2587 7.09949 33.2587 7.09949 33.2587C9.41545 33.4149 10.6307 35.6795 10.6307 35.6795C12.6805 39.2713 15.9836 38.2564 17.3124 37.6316C17.5021 36.1088 18.1099 35.0546 18.7553 34.4691C13.6676 33.9223 8.31474 31.8921 8.31474 22.8335C8.31474 20.2565 9.22535 18.1482 10.6682 16.5085C10.4406 15.9229 9.64311 13.5017 10.8964 10.2611C10.8964 10.2611 12.8326 9.63627 17.1984 12.6819C19.0675 12.1656 20.9951 11.903 22.9315 11.9008C24.8677 11.9008 26.8415 12.1744 28.6641 12.6819C33.0304 9.63627 34.9666 10.2611 34.9666 10.2611C36.2198 13.5017 35.4219 15.9229 35.1942 16.5085C36.6752 18.1482 37.5482 20.2565 37.5482 22.8335C37.5482 31.8921 32.1953 33.8831 27.0696 34.4691C27.9051 35.2108 28.6261 36.6162 28.6261 38.842C28.6261 42.0045 28.5885 44.5426 28.5885 45.3232C28.5885 45.948 29.0063 46.6902 30.145 46.4559C39.2568 43.3317 45.8249 34.5079 45.8249 24.0831C45.8625 11.0417 35.574 0.5 22.9315 0.5Z" fill="#24292F"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_107_215">
+                    <rect width="46" height="46" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="git-sym-text">symbuilding</div>
     </div>
 </div>
 
@@ -181,13 +145,14 @@
     <div class="footer-cont">
         <div class="footer-title">EXPLORE</div>
 
-        <div class="footer-col"><a href="privacy-policy/privacy-policy.html">Privacy Policy</a></div>
-        <div class="footer-col"><a href="tos/tos.html">Terms of Service</a></div>
-        <div class="footer-col"><a href="developers/developers.html">Developers</a></div>
-        <div class="footer-col"><a href="contributing/contributing.html">Contributing</a></div>
+        <div class="footer-col"><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></div>
+        <div class="footer-col"><a href="../tos/tos.html">Terms of Service</a></div>
+        <div class="footer-col"><a href="../developers/developers.html">Developers</a></div>
+        <div class="footer-col"><a href="../contributing/contributing.html">Contributing</a></div>
     </div>
 </div>
 
-</body>
 
+
+</body>
 </html>
