@@ -2,6 +2,7 @@
 
 body {
     /*overflow: hidden;*/
+    min-height: 100vh;
     overflow-x: hidden;
     position: relative;
     background-image: url("../assets/img/bg.jpg");
@@ -15,9 +16,8 @@ body {
     justify-content: space-between;
     /*height: 100vh;*/
     color: #000;
-    margin-inline: 0;
-    margin-top: 1em;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0 0 20vh 0;
 }
 
 
@@ -308,6 +308,10 @@ input, option {
 /*Footer style*/
 
 .footer {
+    bottom: 0;
+    position: fixed;
+    margin-top: 5vh;
+
     background-color: #EFE7E7;
     display: flex;
 

@@ -3,6 +3,8 @@
 body {
     /*overflow: hidden;*/
     position: relative;
+    overflow-x: hidden;
+
     background-image: url("../assets/img/bg.jpg");
     background-attachment: fixed;
     backdrop-filter: blur(2px);
@@ -15,8 +17,9 @@ body {
     /*height: 100vh;*/
     color: #000;
     margin-inline: 0;
-    margin-top: 1em;
-    margin-bottom: 0;
+
+    margin: 0;
+    padding: 0 0 20vh 0;
 }
 
 
@@ -368,3 +371,65 @@ input, option {
 
 
 /*EOF hotel-list-card styling*/
+
+/*Footer style*/
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    margin-top: 5vh;
+
+    background-color: #EFE7E7;
+    display: flex;
+
+    width: 100vw;
+    /*height: 100vh;*/
+    max-width: 100%; /* added */
+
+    /*height: 13.5625rem;*/
+    padding: 2.5625rem 4.375rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9.3125rem;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title {
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 0.5em;
+}
+
+.footer-col svg {
+    /*width: 22px;*/
+    /*height: 22px;*/
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: row;
+
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*EOF Footer Style*/
