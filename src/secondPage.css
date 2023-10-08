@@ -301,36 +301,48 @@ input, option {
 .hotel-list-card {
     width: 14.0625rem;
     height: 14.0625rem;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
+    margin-bottom: 4em;
 }
 
 .bg-img img{
     width: 14.0625rem;
     height: 14.0625rem;
     object-fit: cover;
-    opacity: 50%;
+    /*opacity: 50%;*/
 
 }
-
 .bg-img {
-    height: 14.0625rem;
-    width: 14.0625rem;
-    flex-shrink: 0;
-
-    border-radius: 1rem;
-    background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(85, 83, 83, 0.61) 89.48%), url("../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg"), lightgray 50% / cover no-repeat;
-    background-size: 14.0625rem auto;
-    background-position: center center;
+    background-color: #fff;
+    /*border-radius: 0.5em;*/
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
     box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);
+
+    /*object-fit: cover;*/
 }
+
+/*.bg-img {*/
+/*    height: 14.0625rem;*/
+/*    width: 14.0625rem;*/
+/*    flex-shrink: 0;*/
+
+/*    border-radius: 1rem;*/
+/*    !*background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(85, 83, 83, 0.61) 89.48%), url("../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg"), lightgray 50% / cover no-repeat;*!*/
+/*    !*background-size: 14.0625rem auto;*!*/
+/*    !*background-position: center center;*!*/
+/*    box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);*/
+/*}*/
 
 .card-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 1em;
+    margin: 0 1em 0 1em;
     height: 95%;
-    color: #fff;
+    color: #000;
+    padding-bottom: 0;
+    /*background-color: #fff;*/
 
     font-family: Red Hat Display, sans-serif;
     font-style: normal;
@@ -343,13 +355,13 @@ input, option {
 }
 
 .card-address {
-    color: #DFDFDF;
+    color: #3b3b3b;
     font-size: 0.8125rem;
     font-weight: 400;
 }
 
 .card-price {
-    color: #DFDFDF;
+    color: #3b3b3b;
     font-size: 0.625rem;
     font-weight: 400;
 }

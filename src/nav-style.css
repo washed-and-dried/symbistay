@@ -2,6 +2,7 @@
 
 body {
     /*overflow: hidden;*/
+    overflow-x: hidden;
     position: relative;
     background-image: url("../assets/img/bg.jpg");
     background-attachment: fixed;
@@ -179,7 +180,7 @@ input, option {
     cursor: pointer;
 }
 
-.search-icon svg{
+.search-icon svg {
     width: 2.5em;
 }
 
@@ -230,7 +231,6 @@ input, option {
     /*margin-bottom: 10em;*/
 
 
-
 }
 
 
@@ -238,16 +238,17 @@ input, option {
     width: 14.0625rem;
     height: 14.0625rem;
     flex-shrink: 0;
-    margin-bottom: 10em;
+    margin-bottom: 4em;
 }
 
-.bg-img img{
+.bg-img img {
     width: 14.0625rem;
     height: 14.0625rem;
     object-fit: cover;
     /*opacity: 50%;*/
 
 }
+
 .bg-img {
     background-color: #fff;
     /*border-radius: 0.5em;*/
@@ -304,3 +305,43 @@ input, option {
 /*EOF hotel-list-card styling*/
 
 
+/*Footer style*/
+
+.footer {
+    background-color: #EFE7E7;
+    display: flex;
+
+    width: 100vw;
+    /*height: 100vh;*/
+    max-width: 100%; /* added */
+
+    /*height: 13.5625rem;*/
+    padding: 2.5625rem 4.375rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9.3125rem;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-col {
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
