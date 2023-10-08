@@ -276,8 +276,9 @@ input, option {
 }
 
 .centerProp {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*flex-direction: column;*/
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
     gap: 1.5em;
@@ -317,7 +318,7 @@ input, option {
 
 .hotel-list-card {
     width: 14.0625rem;
-    height: 14.0625rem;
+    /*height: 14.0625rem;*/
     /*flex-shrink: 0;*/
     margin-bottom: 4em;
 }
