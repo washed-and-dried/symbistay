@@ -1,0 +1,31 @@
+
+/*Privacy Policy styling*/
+
+.privacy-box {
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    margin-top: 2em;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+.privacy-title {
+    color: #232222;
+    text-align: center;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-bottom: 0.2em;
+}
+
+.privacy-text {
+    width: 71.4375rem;
+
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
