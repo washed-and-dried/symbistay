@@ -50,10 +50,6 @@ body {
     padding-block: 0.8em;
 }
 
-.nav-text a {
-    text-decoration: none;
-    color: #000;
-}
 
 .nav-text:hover {
     cursor: pointer;
