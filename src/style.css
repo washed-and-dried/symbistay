@@ -14,67 +14,10 @@ body {
     justify-content: space-between;
     height: 100vh;
     color: #000;
+    margin: 0;
 }
 
-/*.main-cont {*/
-/*    position: sticky;*/
-/*    top: 2em;*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    min-width: 100vw;*/
-/*}*/
-
-.top-nav{
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 30em;
-    padding-right: 0.55em;
-    padding-left: 1em;
-
-}
-
-.nav-cont {
-    background-color: #fff;
-    /*padding: 1.5em;*/
-    border-radius: 1em;
-    /*margin-top: 4em;*/
-    padding-block: 0.5em;
-
-}
-.nav-text:hover{
-    background-color: #c8b7c9;
-}
-
-#profile {
-
-    position: absolute;
-    top: 1.5em;
-    right: 3vw;
-    width: 3em;
-    height: 3em;
-    padding: 0;
-    border-radius: 4em;
-}
-
-#prof-img{
-    /*margin-top: 2.3em;*/
-    width: 3em;
-    height: 3em;
-    padding: 0;
-    border-radius: 4em;
-}
-
-#profile:hover {
-    cursor: pointer;
-}
-
-/*#profile img {*/
-/*    height: 3em;*/
-/*    width: 3em;*/
-/*}*/
-
+/*mid styling start*/
 .mid-text {
     font-size: 64px;
     color: #fff;
@@ -82,67 +25,23 @@ body {
     font-weight: 800;
 }
 
-.hotel-text{
+.hotel-text {
     background: linear-gradient(214deg, #FC82FF 19.35%, #D0CCFF 47.43%);
     -webkit-background-clip: text;
     background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
-
-.images{
+.images {
     padding-left: 85px;
 }
 
-.images img{
+.images img {
     height: 14em;
-    width: 8em;
     object-fit: cover;
-    border-radius: 10px ;
-}
-
-
-
-
-
-#nav-logo{
-    /*margin-right: 3em;*/
-}
-
-#nav-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 70%;
-    
-}
-
-.nav-text {
-    font-family: Inter, sans-serif;
-    font-weight: bold;
-    padding-inline: 1.8em;
-    padding-block: 0.8em;
-    border-radius: 0.6em;
-}
-
-.active {
-    /*background-color: #000;*/
-    background-color: #EEEEEE;
-    padding-inline: 2em;
-    padding-block: 1em;
-    border-radius: 0.6em;
-}
-
-#nav-selected:hover {
-    cursor: pointer;
-}
-
-
-#btm-nav {
-    /*position: absolute;*/
-    margin-bottom: 5em;
+    width: 180px;
+    border-radius: 4%;
+    padding-top: 1em;
 }
 
 
@@ -152,12 +51,11 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-
-
 }
+/*EOF mid styling*/
 
-.images img{
-    width: 180px;
-    border-radius: 4%;
-    padding-top: 1em;
+/*bottom nav styling*/
+#btm-nav {
+    margin-bottom: 5em;
 }
+/*EOF bottom nav*/
