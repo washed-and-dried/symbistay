@@ -124,7 +124,7 @@ body {
     font-weight: bold;
     padding-inline: 1.8em;
     padding-block: 0.8em;
-    
+    border-radius: 0.6em;
 }
 
 .active {

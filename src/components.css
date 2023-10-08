@@ -1,0 +1,110 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    background-color: antiquewhite;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 1em 1em 1.5em 1em;
+    max-width: 25em;
+
+}
+
+.heading-name{
+    
+color: #000;
+text-align: left;
+font-family:'Red Hat Display', sans-serif;
+font-size: 1.8em;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+padding-left: 11px;
+}
+
+.address,.section{
+    
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    padding-left: 11px;
+}   
+
+.Spokesman{
+    color: #A7A7A7;
+    font-weight: 500;
+    font-size: 1.3em;
+
+}
+.gitdetails{
+    
+    padding-left: 11px;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+}
+
+.git-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 11px;
+}
+
+.git-image svg {
+    width: 1.8em;
+}
+
+/* KHATM */
+
+.box2{
+    
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.25);
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 12px;
+    padding: 1em 1em 1.5em 1em;
+   
+}
+
+.main-heading{
+    
+    color: #010101;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.small-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-text{
+color: #000;
+text-align: center;
+font-family: 'Red Hat Display'
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+
