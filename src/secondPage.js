@@ -52,7 +52,10 @@ const decideCountryName = (file) => {
     }
 }
 
-(async () => {
+//counter for next button
+let counter = 1;
+
+const generateHotelList = async () => {
     const file = FILE_PATH.BERLIN;
 
     //set the file name according to the file we are reading from
@@ -65,13 +68,18 @@ const decideCountryName = (file) => {
     const hotelsList = res.airbnbHotels;
 
     //for now we will only show numbers of hotels
-    let noOfHotels = 12;
+    let noOfHotels = 12 * counter;
 
     //query the grid div and append noOfHotels card to it
     const hotelGridDiv = document.querySelector(".centerProp");
+    hotelGridDiv.innerHTML = null;
 
     for (let i = 0; i < noOfHotels; i++){
         const currentHotel = hotelsList[i];
         hotelGridDiv.appendChild(createHotelListCard(currentHotel.title, currentHotel.thumbnail, currentHotel.subtitles[1], currentHotel.price.value));
     }
-})()
+}
+
+generateHotelList();
+
+document.querySelector(".next-hotel-btn").addEventListener("click", () => {counter++; generateHotelList()})

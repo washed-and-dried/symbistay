@@ -258,6 +258,11 @@ input, option {
     padding: 2em;
 }
 
+.next-hotel-btn {
+    align-self: flex-end;
+    font-size: 1.25em;
+}
+
 .mid-text {
     /*margin-block: 0.5em;*/
     font-size: 64px;
