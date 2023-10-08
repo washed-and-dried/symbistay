@@ -8,6 +8,15 @@ const FILE_PATH = {
     ROME: "../assets/jsonData/Rome.json"
 }
 
+const trimName = (hotelName) => {
+    let s = "";
+    hotelName.trim();
+    if (hotelName.length > 21){
+        return hotelName.slice(0, 18) + "...";
+    }
+    return hotelName;
+}
+
 const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice) => {
     const hotelCardDiv = document.createElement("div");
     hotelCardDiv.classList.add("hotel-list-card")
@@ -24,7 +33,7 @@ const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice) => 
 
     const hotelCardTitle = document.createElement("div");
     hotelCardTitle.classList.add("card-title");
-    hotelCardTitle.innerText = hotelName;
+    hotelCardTitle.innerText = trimName(hotelName);
 
     const hotelCardSubTitle = document.createElement("div");
     hotelCardSubTitle.classList.add("card-subtitle");
@@ -32,7 +41,7 @@ const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice) => 
 
     const hotelCardPrice = document.createElement("div");
     hotelCardPrice.classList.add("card-price");
-    hotelCardPrice.innerText = hotelPrice;
+    hotelCardPrice.innerText = `From $${hotelPrice} per night`;
 
     hotelCardTextDiv.append(hotelCardSubTitle, hotelCardPrice, hotelCardTitle);
 
