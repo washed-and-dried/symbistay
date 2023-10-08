@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="secondPage.css">
     <!--    <link rel="stylesheet" href="nav-style.css">-->
     <!--    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">-->
-    <title>Hotels
-    </title>
+    <title>Hotels</title>
+    <script src="index.js" defer></script>
+    <script src="secondPage.js" defer></script>
 </head>
 <body>
-
 <div class="top-nav">
     <div id="nav-logo">
         <svg width="61" height="44" viewBox="0 0 61 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,18 +22,25 @@
         </svg>
     </div>
     <div id="nav-items">
-        <div class="nav-text"><a href="./index.html">Home</a></div>
-        <div class="nav-text active"><a href="./secondPage.html">Hotels</a></div>
-        <div class="nav-text"><a href="./contact.html">Contact</a></div>
-        <div class="nav-text"><a href="./profile.html">Profile</a></div>
+        <a href="./index.html"><div class="nav-text">Home</div></a>
+        <a href="./secondPage.html"><div class="nav-text active">Hotels</div></a>
+        <a href="./contact.html"><div class="nav-text">Contact</div></a> <!--fixme: where the fuck are these?-->
+        <a href="./profile.html"><div class="nav-text">Profile</div></a>
     </div>
 </div>
-<div id="profile"><img id="prof-img" src="../assets/img/dragonjammies.png" alt=""></div>
+<div id="profile">
+    <img id="prof-img" src="../assets/img/dragonjammies.png" alt="">
+    <dialog id="account-dialog-box">
+        <div class="profile-dropdown">
+            <button class="btn" id="account">Account</button>
+            <button class="btn" id="settings">Settings</button>
+            <button class="btn" id="sign-out">Sign Out</button>
+        </div>
+    </dialog>
+</div>
 
 <div class="mid-container">
-
     <div class="search-container">
-
         <div class="search-items">
             <div class="search-item-box">
                 <div class="search-text"><label for="checkin">Check In</label></div>
@@ -47,11 +55,9 @@
                 <div class="search-option-text"><input type="number" name="" id="guests" value="1"></div>
             </div>
         </div>
-
-
     </div>
 
-    <!--    <div class="hotel-search-cont">-->
+    <!--FIXME: Yeh chahiye ab?    <div class="hotel-search-cont">-->
     <!--        <div class="checkin-cont">-->
     <!--            <label for="checkin-date">check in</label>-->
     <!--            <span>-->
@@ -77,140 +83,9 @@
 
     <div class="mid-right">
         <div class="mid-text">INDIA</div>
-        <div class="centerProp">
-            <div class="list-col">
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-col">
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-col">
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-col">
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel-list-card">
-                    <div class="bg-img">
-                        <img src="../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg" alt="">
-                        <div class="card-text">
-                            <div class="card-title">Hotel Something</div>
-                            <div class="card-address">SB Road, Pune, Maharashtra</div>
-                            <div class="card-price">From $120 per night</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+        <div class="centerProp"></div>
+        <button class="btn next-hotel-btn">next</button>
     </div>
-
 </div>
 
 <div class="footer">
@@ -268,7 +143,6 @@
 
     <div class="footer-cont">
         <div class="footer-title">CONTACT</div>
-
         <div class="footer-col">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                 <path d="M2.41667 1H5.25L6.66667 4.54167L4.89583 5.60417C5.65443 7.14234 6.89933 8.38724 8.4375 9.14583L9.5 7.375L13.0417 8.79167V11.625C13.0417 12.0007 12.8924 12.3611 12.6267 12.6267C12.3611 12.8924 12.0007 13.0417 11.625 13.0417C8.86198 12.8738 6.25594 11.7004 4.29859 9.74308C2.34123 7.78573 1.16791 5.17969 1 2.41667C1 2.04094 1.14926 1.68061 1.41493 1.41493C1.68061 1.14926 2.04094 1 2.41667 1Z"
@@ -295,14 +169,11 @@
 
     <div class="footer-cont">
         <div class="footer-title">EXPLORE</div>
-
         <div class="footer-col"><a href="./privacy-policy.html">Privacy Policy</a></div>
         <div class="footer-col"><a href="./tos.html">Terms of Service</a></div>
         <div class="footer-col"><a href="./developers.html">Developers</a></div>
         <div class="footer-col"><a href="./contributing.html">Contributing</a></div>
     </div>
 </div>
-
-
 </body>
 </html>

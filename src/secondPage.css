@@ -40,6 +40,7 @@ body {
     border-radius: 1em;
     padding-block: 0.5em;
     text-decoration: none;
+    gap: 1em;
 }
 
 .nav-text {
@@ -49,10 +50,6 @@ body {
     padding-block: 0.8em;
 }
 
-.nav-text a {
-    text-decoration: none;
-    color: #000;
-}
 
 .nav-text:hover {
     cursor: pointer;
@@ -196,7 +193,7 @@ input, option {
     cursor: pointer;
 }
 
-.search-icon svg{
+.search-icon svg {
     width: 2.5em;
 }
 
@@ -285,6 +282,11 @@ display: none;
     padding: 2em;
 }
 
+.next-hotel-btn {
+    align-self: flex-end;
+    font-size: 1.25em;
+}
+
 .mid-text {
     /*margin-block: 0.5em;*/
     font-size: 64px;
@@ -300,8 +302,9 @@ display: none;
 }
 
 .centerProp {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*flex-direction: column;*/
     /*justify-content: flex-start;*/
     /*align-content: flex-start;*/
     gap: 1.5em;
@@ -335,24 +338,24 @@ display: none;
     /*margin-bottom: 10em;*/
 
 
-
 }
 
 
 .hotel-list-card {
     width: 14.0625rem;
-    height: 14.0625rem;
+    /*height: 14.0625rem;*/
     /*flex-shrink: 0;*/
     margin-bottom: 4em;
 }
 
-.bg-img img{
+.bg-img img {
     width: 14.0625rem;
     height: 14.0625rem;
     object-fit: cover;
     /*opacity: 50%;*/
 
 }
+
 .bg-img {
     background-color: #fff;
     /*border-radius: 0.5em;*/
@@ -465,9 +468,10 @@ display: none;
     line-height: normal;
 }
 
-.footer-col a{
+.footer-col a {
     text-decoration: none;
     color: #000;
 }
 
 /*EOF Footer Style*/
+
