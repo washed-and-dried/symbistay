@@ -373,3 +373,13 @@ input, option {
 }
 
 /*EOF Footer Style*/
+
+/*Profile and Dialog box styling*/
+
+#account-dialog-box {
+    padding: 0;
+    left: -40%;
+}
+
+/*EOF Dialog box styling*/
+
