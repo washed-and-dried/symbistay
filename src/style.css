@@ -44,7 +44,9 @@ body {
     padding-top: 1em;
 }
 
-.mid-section {
+
+
+.mid-section{
     display: flex;
     flex-direction: row;
     align-items: center;
