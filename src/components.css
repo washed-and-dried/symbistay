@@ -73,9 +73,9 @@ padding-left: 11px;
     max-width: 50em;
     display: flex;
     flex-direction: column;
-    
+    gap: 2em;
     border-radius: 12px;
-    padding: 1em 1em 1.5em 1em;
+    padding: 2em 2em 2.5em 2em;
    
 }
 
@@ -93,18 +93,39 @@ padding-left: 11px;
 .small-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 3em;
 }
 
-.item-text{
+/* .item-text{
+display: flex;
 color: #000;
 text-align: center;
-font-family: 'Red Hat Display'
+font-family: 'Red Hat Display';
 font-size: 1.25rem;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+
+} */
+.xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    gap: 5px;
+text-align: center;
+font-family: 'Red Hat Display';
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+    
 }
+
 
 
 
