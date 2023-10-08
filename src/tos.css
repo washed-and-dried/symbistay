@@ -1,0 +1,59 @@
+
+/*Privacy Policy styling*/
+
+.tos-container {
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    margin-top: 2em;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+#tos-submit {
+    /*border: #000 solid;*/
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
+    border-width: 2px;
+    margin-top: 0.8em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-family: Red Hat Display, sans-serif;
+    font-weight: 600;
+}
+
+#tos-submit:hover {
+    cursor: pointer;
+}
+
+.tos-title {
+    color: #232222;
+    text-align: center;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-bottom: 0.2em;
+}
+
+.tos-text {
+    width: 71.4375rem;
+
+    color: #000;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tos-form-cont {
+    font-family: Red Hat Display, sans-serif;
+    font-weight: 500;
+    margin-top: 1em;
+
+}
+
+.tos-form-cont input {
+    cursor: pointer;
+    margin: 0;
+    width: 1em;
+}

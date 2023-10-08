@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="developers.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="tos.css">
     <!--    <link rel="stylesheet" href="nav-style.css">-->
     <!--    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">-->
     <title>Hotels</title>
@@ -27,10 +27,10 @@
             <div class="nav-text">Home</div>
         </a>
         <a href="./secondPage.html">
-            <div class="nav-text">Hotels</div>
+            <div class="nav-text active">Hotels</div>
         </a>
         <a href="./contact.html">
-            <div class="nav-text active">Contact</div>
+            <div class="nav-text">Contact</div>
         </a> <!--fixme: where the fuck are these?-->
         <!--        <a href="./profile.html"><div class="nav-text">Profile</div></a>-->
         <a href="./developers.html">
@@ -49,33 +49,59 @@
     </dialog>
 </div>
 
-<div class="contact-container">
+<div class="tos-container">
+    <div class="tos-title">Terms of Service</div>
+    <div class="tos-text">
+        These Terms are only applicable to Bookings made prior to August 1, 2022 and remain online for reference only.
+
+
+        For our updated Terms of Service, please click here.
+
+
+        Last updated on July 8, 2020.
+
+
+        Please read these Terms of Service (“Terms”) carefully as they contain important information about your legal
+        rights, remedies and obligations. By accessing or using the Symbistay Platform, you agree to comply with and be
+        bound by these Terms.
+
+
+        These Terms constitute a legally binding agreement (“Agreement”) between you and Symbistay India Inc.
+        (“Symbistay”) governing the use of the website, including any subdomains thereof, and any other websites through
+        which Symbistay makes its services available, mobile, tablet and other smart device applications, and
+        application interfaces and all associated services (the “Symbistay Platform”) and the marketplace operated by
+        Symbistay that enables Hosts to publish Host Services as Listings and to communicate and transact directly with
+        Guests that are seeking to book such Host Services (“Symbistay Service”).
+
+
+        The collection and use of personal information in connection with your access to and use of the Symbistay
+        Service is described in the Privacy Policy. The License Terms, Payment Terms, and Cancellation Policy found on
+        the Symbistay website (“Symbistay Policies”) are applicable to your use of the Symbistay Platform and are
+        incorporated by reference into this Agreement.
+
+
+        Hosts alone are responsible for identifying, understanding, and complying with all laws, rules and regulations
+        that apply to its Listings and Host Services. Hosts alone are responsible for identifying and obtaining any
+        required licenses, permits, or registrations for any Host Services it offers. Certain types of Host Services may
+        be prohibited altogether. Penalties may include fines or other enforcement. If Hosts have questions about how
+        any restrictions or local laws may apply to its Listings and Host Services on the Symbistay Service, Hosts
+        should always seek legal guidance.
+
+
+        Please contact Symbistay with any questions at info@Symbistay.com.
+
+
+    </div>
     <form action="" method="get">
-    <table border="1">
-        <tr>
-            <td><label for="firstname">First Name</label></td>
-            <td><input type="text" name="firstname" id="firstname"></td>
-            <td><label for="lastname">Last Name</label></td>
-            <td><input type="text" name="lastname" id="lastname"></td>
-        </tr>
-        <tr>
-            <td><label for="email">Email Address</label></td>
-            <td colspan="3"><input type="email" name="email" id="email"></td>
-
-        </tr>
-        <tr>
-            <td><label for="message">Message</label></td>
-            <td><input type="text" name="message" id="message"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </table>
+        <div class="tos-form-cont">
+            <input type="checkbox" name="tos-accept" id="tos-accept">
+            <label for="tos-accept">
+                By checking this box, you are agreeing to our terms of service.
+            </label>
+        </div>
+        <input id="tos-submit" type="submit" value="Submit">
     </form>
-
-
 </div>
-
 
 <div class="footer">
     <div class="footer-cont">
@@ -145,7 +171,7 @@
                       stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M5 4L11.5 9L18 4" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            contact@symbistay.com
+            contact@Symbistay.com
         </div>
     </div>
 
