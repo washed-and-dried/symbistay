@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    background-image: url("../assets/img/bg.jpg");
+    background-image: url("../../assets/img/bg.jpg");
     background-attachment: fixed;
     backdrop-filter: blur(2px);
     background-size: cover;
