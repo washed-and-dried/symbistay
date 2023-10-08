@@ -22,6 +22,10 @@ body {
     padding: 0 0 20vh 0;
 }
 
+.top-nav a {
+    text-decoration: none;
+    color: #000
+}
 
 /*nav styling*/
 .top-nav {
@@ -35,6 +39,7 @@ body {
     background-color: #fff;
     border-radius: 1em;
     padding-block: 0.5em;
+    text-decoration: none;
 }
 
 .nav-text {
@@ -44,17 +49,26 @@ body {
     padding-block: 0.8em;
 }
 
-.nav-text:hover {
-    background-color: #c8b7c9;
+.nav-text a {
+    text-decoration: none;
+    color: #000;
 }
+
+.nav-text:hover {
+    cursor: pointer;
+}
+
 
 .active {
     /*background-color: #000;*/
-    background-color: #EEEEEE;
+    /*background-color: #EEEEEE;*/
     padding-inline: 2em;
     padding-block: 1em;
-    border-radius: 0.6em;
+    /*border-radius: 0.6em;*/
+    border-radius: 0.6875rem;
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
 }
+
 
 #nav-items {
     display: flex;

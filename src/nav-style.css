@@ -21,6 +21,7 @@ body {
 }
 
 
+
 /*nav styling*/
 .top-nav {
     margin-top: 1em;
@@ -33,6 +34,7 @@ body {
     background-color: #fff;
     border-radius: 1em;
     padding-block: 0.5em;
+    text-decoration: none;
 }
 
 .nav-text {
@@ -40,6 +42,11 @@ body {
     font-weight: bold;
     padding-inline: 1.8em;
     padding-block: 0.8em;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #000;
 }
 
 .nav-text:hover {

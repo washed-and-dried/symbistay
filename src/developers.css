@@ -21,6 +21,11 @@ body {
     padding: 0 0 0 0;
 }
 
+.nav-text a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /*nav styling*/
 .top-nav {
