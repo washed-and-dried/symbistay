@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="consistent/nav-style.css">
-    <link rel="stylesheet" href="consistent/utility.css">
-    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">
-
-    <script src="./index.js" defer></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="../consistent/utility.css">
+    <link rel="stylesheet" href="../developers/developers.css">
+    <link rel="stylesheet" href="contact.css">
+    <!--    <link rel="stylesheet" href="nav-style.css">-->
+    <!--    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">-->
+    <title>Hotels</title>
+    <script src="../index.js" defer></script>
+    <script src="../hotels/secondPage.js" defer></script>
 </head>
 <body>
-
-
-<!--<div class="main-cont">-->
 <div class="top-nav">
     <div id="nav-logo">
         <svg width="61" height="44" viewBox="0 0 61 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,14 +23,23 @@
         </svg>
     </div>
     <div id="nav-items">
-        <a href="./index.html"><div class="nav-text active">Home</div></a>
-        <a href="hotels/secondPage.html"><div class="nav-text">Hotels</div></a>
-        <a href="contact/contact.html"><div class="nav-text">Contact</div></a> <!--fixme: where the fuck are these?-->
+        <a href="../index.html">
+            <div class="nav-text">Home</div>
+        </a>
+        <a href="../hotels/secondPage.html">
+            <div class="nav-text">Hotels</div>
+        </a>
+        <a href="./contact.html">
+            <div class="nav-text active">Contact</div>
+        </a> <!--fixme: where the fuck are these?-->
         <!--        <a href="./profile.html"><div class="nav-text">Profile</div></a>-->
-        <a href="developers/developers.html"><div class="nav-text">Profile</div></a> <!--fixme: for now showing the dev page-->
+        <a href="../developers/developers.html">
+            <div class="nav-text">Profile</div>
+        </a> <!--fixme: for now showing the dev page-->
     </div>
 </div>
-<div id="profile"><img id="prof-img" src="../assets/img/dragonjammies.png" alt="">
+<div id="profile">
+    <img id="prof-img" src="../../assets/img/dragonjammies.png" alt="">
     <dialog id="account-dialog-box">
         <div class="profile-dropdown">
             <button class="btn" id="account">Account</button>
@@ -41,62 +48,34 @@
         </div>
     </dialog>
 </div>
-<!--</div>-->
 
-<div id="mid">
-    <div class="mid-hotel-text">BOOK YOUR DESIRED <span class="hotel-text">HOTEL</span></div>
-    <div class="images">
-        <img alt="kuch-bhi" src="../assets/img/tamara-malaniy-Hw2wn2A930s-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/tamara-malaniy-pOZCU9IjzKA-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/serena-repice-lentini-jdFwG_dW934-unsplash.jpg">
-        <img alt="kuch-bhi" src="../assets/img/richard-stachmann-tpSDOTkNrTc-unsplash.jpg">
-    </div>
+<div class="contact-container">
+    <form action="" method="get">
+    <table border="1">
+        <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td><input type="text" name="firstname" id="firstname"></td>
+            <td><label for="lastname">Last Name</label></td>
+            <td><input type="text" name="lastname" id="lastname"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email Address</label></td>
+            <td colspan="3"><input type="email" name="email" id="email"></td>
+
+        </tr>
+        <tr>
+            <td><label for="message">Message</label></td>
+            <td><input type="text" name="message" id="message"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+    </form>
+
+
 </div>
 
-
-<div class="bottom">
-
-    <div class="search-container">
-
-        <div class="search-items">
-            <div class="search-item-box">
-                <div class="search-text"><label for="location">Where to?</label></div>
-                <div class="search-option-text">
-                    <select name="" id="location">
-                        <option value="Bali">Berlin</option>
-                        <option value="Bali">Paris</option>
-                        <option value="Bali">London</option>
-                        <option value="Bali">Madrid</option>
-                        <option value="Bali">Rome</option>
-                    </select>
-                </div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkin">Check In</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkin"></div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkout">Check Out</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkout"></div>
-            </div>
-            <div class="search-hr"></div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="guests">Guests</label></div>
-                <div class="search-option-text"><input type="number" name="" id="guests" placeholder="1"></div>
-            </div>
-        </div>
-
-        <div class="search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
-                <path d="M39.2 42.5L26.6 29.9C25.6 30.7 24.45 31.3333 23.15 31.8C21.85 32.2667 20.4667 32.5 19 32.5C15.3667 32.5 12.2917 31.2417 9.775 28.725C7.25833 26.2083 6 23.1333 6 19.5C6 15.8667 7.25833 12.7917 9.775 10.275C12.2917 7.75833 15.3667 6.5 19 6.5C22.6333 6.5 25.7083 7.75833 28.225 10.275C30.7417 12.7917 32 15.8667 32 19.5C32 20.9667 31.7667 22.35 31.3 23.65C30.8333 24.95 30.2 26.1 29.4 27.1L42 39.7L39.2 42.5ZM19 28.5C21.5 28.5 23.625 27.625 25.375 25.875C27.125 24.125 28 22 28 19.5C28 17 27.125 14.875 25.375 13.125C23.625 11.375 21.5 10.5 19 10.5C16.5 10.5 14.375 11.375 12.625 13.125C10.875 14.875 10 17 10 19.5C10 22 10.875 24.125 12.625 25.875C14.375 27.625 16.5 28.5 19 28.5Z"
-                      fill="black"/>
-            </svg>
-        </div>
-
-    </div>
-</div>
 
 <div class="footer">
     <div class="footer-cont">
@@ -153,7 +132,6 @@
 
     <div class="footer-cont">
         <div class="footer-title">CONTACT</div>
-
         <div class="footer-col">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                 <path d="M2.41667 1H5.25L6.66667 4.54167L4.89583 5.60417C5.65443 7.14234 6.89933 8.38724 8.4375 9.14583L9.5 7.375L13.0417 8.79167V11.625C13.0417 12.0007 12.8924 12.3611 12.6267 12.6267C12.3611 12.8924 12.0007 13.0417 11.625 13.0417C8.86198 12.8738 6.25594 11.7004 4.29859 9.74308C2.34123 7.78573 1.16791 5.17969 1 2.41667C1 2.04094 1.14926 1.68061 1.41493 1.41493C1.68061 1.14926 2.04094 1 2.41667 1Z"
@@ -180,14 +158,11 @@
 
     <div class="footer-cont">
         <div class="footer-title">EXPLORE</div>
-
-        <div class="footer-col"><a href="privacy-policy/privacy-policy.html">Privacy Policy</a></div>
-        <div class="footer-col"><a href="tos/tos.html">Terms of Service</a></div>
-        <div class="footer-col"><a href="developers/developers.html">Developers</a></div>
+        <div class="footer-col"><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></div>
+        <div class="footer-col"><a href="../tos/tos.html">Terms of Service</a></div>
+        <div class="footer-col"><a href="../developers/developers.html">Developers</a></div>
         <div class="footer-col"><a href="./contributing.html">Contributing</a></div>
     </div>
 </div>
-
 </body>
-
 </html>

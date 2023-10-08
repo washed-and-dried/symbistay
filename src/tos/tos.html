@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="secondPage.css">
+    <link rel="stylesheet" href="../consistent/utility.css">
+    <link rel="stylesheet" href="../developers/developers.css">
+    <link rel="stylesheet" href="tos.css">
     <!--    <link rel="stylesheet" href="nav-style.css">-->
     <!--    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">-->
     <title>Hotels</title>
-    <script src="index.js" defer></script>
-    <script src="secondPage.js" defer></script>
+    <script src="../index.js" defer></script>
+    <script src="../hotels/secondPage.js" defer></script>
 </head>
 <body>
 <div class="top-nav">
@@ -22,15 +23,23 @@
         </svg>
     </div>
     <div id="nav-items">
-        <a href="./index.html"><div class="nav-text">Home</div></a>
-        <a href="./secondPage.html"><div class="nav-text active">Hotels</div></a>
-        <a href="./contact.html"><div class="nav-text">Contact</div></a> <!--fixme: where the fuck are these?-->
-<!--        <a href="./profile.html"><div class="nav-text">Profile</div></a>-->
-        <a href="./developers.html"><div class="nav-text">Profile</div></a> <!--fixme: for now showing the dev page-->
+        <a href="../index.html">
+            <div class="nav-text">Home</div>
+        </a>
+        <a href="../hotels/secondPage.html">
+            <div class="nav-text active">Hotels</div>
+        </a>
+        <a href="../contact/contact.html">
+            <div class="nav-text">Contact</div>
+        </a> <!--fixme: where the fuck are these?-->
+        <!--        <a href="./profile.html"><div class="nav-text">Profile</div></a>-->
+        <a href="../developers/developers.html">
+            <div class="nav-text">Profile</div>
+        </a> <!--fixme: for now showing the dev page-->
     </div>
 </div>
 <div id="profile">
-    <img id="prof-img" src="../assets/img/dragonjammies.png" alt="">
+    <img id="prof-img" src="../../assets/img/dragonjammies.png" alt="">
     <dialog id="account-dialog-box">
         <div class="profile-dropdown">
             <button class="btn" id="account">Account</button>
@@ -40,53 +49,58 @@
     </dialog>
 </div>
 
-<div class="mid-container">
-    <div class="search-container">
-        <div class="search-items">
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkin">Check In</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkin"></div>
-            </div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="checkout">Check Out</label></div>
-                <div class="search-option-text"><input type="date" name="" id="checkout"></div>
-            </div>
-            <div class="search-item-box">
-                <div class="search-text"><label for="guests">Guests</label></div>
-                <div class="search-option-text"><input type="number" name="" id="guests" value="1"></div>
-            </div>
+<div class="tos-container">
+    <div class="tos-title">Terms of Service</div>
+    <div class="tos-text">
+        These Terms are only applicable to Bookings made prior to August 1, 2022 and remain online for reference only.
+
+
+        For our updated Terms of Service, please click here.
+
+
+        Last updated on July 8, 2020.
+
+
+        Please read these Terms of Service (“Terms”) carefully as they contain important information about your legal
+        rights, remedies and obligations. By accessing or using the Symbistay Platform, you agree to comply with and be
+        bound by these Terms.
+
+
+        These Terms constitute a legally binding agreement (“Agreement”) between you and Symbistay India Inc.
+        (“Symbistay”) governing the use of the website, including any subdomains thereof, and any other websites through
+        which Symbistay makes its services available, mobile, tablet and other smart device applications, and
+        application interfaces and all associated services (the “Symbistay Platform”) and the marketplace operated by
+        Symbistay that enables Hosts to publish Host Services as Listings and to communicate and transact directly with
+        Guests that are seeking to book such Host Services (“Symbistay Service”).
+
+
+        The collection and use of personal information in connection with your access to and use of the Symbistay
+        Service is described in the Privacy Policy. The License Terms, Payment Terms, and Cancellation Policy found on
+        the Symbistay website (“Symbistay Policies”) are applicable to your use of the Symbistay Platform and are
+        incorporated by reference into this Agreement.
+
+
+        Hosts alone are responsible for identifying, understanding, and complying with all laws, rules and regulations
+        that apply to its Listings and Host Services. Hosts alone are responsible for identifying and obtaining any
+        required licenses, permits, or registrations for any Host Services it offers. Certain types of Host Services may
+        be prohibited altogether. Penalties may include fines or other enforcement. If Hosts have questions about how
+        any restrictions or local laws may apply to its Listings and Host Services on the Symbistay Service, Hosts
+        should always seek legal guidance.
+
+
+        Please contact Symbistay with any questions at info@Symbistay.com.
+
+
+    </div>
+    <form action="" method="get">
+        <div class="tos-form-cont">
+            <input type="checkbox" name="tos-accept" id="tos-accept">
+            <label for="tos-accept">
+                By checking this box, you are agreeing to our terms of service.
+            </label>
         </div>
-    </div>
-
-    <!--FIXME: Yeh chahiye ab?    <div class="hotel-search-cont">-->
-    <!--        <div class="checkin-cont">-->
-    <!--            <label for="checkin-date">check in</label>-->
-    <!--            <span>-->
-    <!--            <input id="checkin-date" type="date">-->
-    <!--            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">-->
-    <!--        </span>-->
-    <!--        </div>-->
-    <!--        <div class="checkout-cont">-->
-    <!--            <label for="checkout-date">check out</label>-->
-    <!--            <span>-->
-    <!--            <input id="checkout-date" type="date">-->
-    <!--            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">-->
-    <!--        </span>-->
-    <!--        </div>-->
-    <!--        <div class="guestnum-cont">-->
-    <!--            <label for="guest-num">guests</label>-->
-    <!--            <span>-->
-    <!--            <input type="number" name="guest-num" id="guest-num">-->
-    <!--            <img alt="search-hotel" class="arrow" src="../assets/img/arrow-down-3101 (2).png">-->
-    <!--            </span>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <div class="mid-right">
-        <div class="mid-text">INDIA</div>
-        <div class="centerProp"></div>
-        <button class="btn next-hotel-btn">next</button>
-    </div>
+        <input id="tos-submit" type="submit" value="Submit">
+    </form>
 </div>
 
 <div class="footer">
@@ -157,7 +171,7 @@
                       stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M5 4L11.5 9L18 4" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            contact@symbistay.com
+            contact@Symbistay.com
         </div>
     </div>
 
@@ -170,9 +184,9 @@
 
     <div class="footer-cont">
         <div class="footer-title">EXPLORE</div>
-        <div class="footer-col"><a href="./privacy-policy.html">Privacy Policy</a></div>
+        <div class="footer-col"><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></div>
         <div class="footer-col"><a href="./tos.html">Terms of Service</a></div>
-        <div class="footer-col"><a href="./developers.html">Developers</a></div>
+        <div class="footer-col"><a href="../developers/developers.html">Developers</a></div>
         <div class="footer-col"><a href="./contributing.html">Contributing</a></div>
     </div>
 </div>
