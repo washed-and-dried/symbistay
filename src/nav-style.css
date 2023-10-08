@@ -111,6 +111,25 @@
     color: #000;
 }
 
+input, option {
+    border: 0;
+    max-width: 8em;
+    margin-right: 1em;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#guests {
+    max-width: 4em;
+    margin-right: 1em;
+    border: 0;
+}
+
+
 .search-hr {
     background-color: #D9D9D9;
     margin-top: 0.5em;
@@ -130,8 +149,122 @@
     background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
 }
 
+.search-icon:hover {
+    cursor: pointer;
+}
+
 .search-icon svg{
     width: 2.5em;
 }
 
 /*EOF search-container styling*/
+
+/*Profile Dropdown styling*/
+
+.profile-dropdown {
+    display: inline-flex;
+    padding: 0.7em 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7em;
+
+    border-radius: 0.7em;
+    background: #FFF;
+    box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 0.25);
+}
+
+.profile-dropdown button {
+    border: 0;
+    background-color: #fff;
+    transition: background-color ease-in-out 300ms;
+
+    color: #000;
+    font-family: Red Hat Display, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0.3em;
+}
+
+.profile-dropdown button:hover {
+    background-color: #cccccc;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+/*EOF profile dropdown styling*/
+
+/*hotel-list-card styling*/
+
+.hotel-list-card {
+    padding: 0;
+    /*width: 225px;*/
+    /*height: 225px;*/
+    margin-bottom: 10em;
+
+
+
+}
+
+
+.hotel-list-card {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    flex-shrink: 0;
+}
+
+.bg-img img{
+    width: 14.0625rem;
+    height: 14.0625rem;
+    object-fit: cover;
+    opacity: 50%;
+
+}
+
+.bg-img {
+    height: 14.0625rem;
+    width: 14.0625rem;
+    flex-shrink: 0;
+
+    border-radius: 1rem;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(85, 83, 83, 0.61) 89.48%), url("../assets/img/adi-lica-ZpN1lhola0s-unsplash.jpg"), lightgray 50% / cover no-repeat;
+    background-size: 14.0625rem auto;
+    background-position: center center;
+    box-shadow: 0px 0px 51px -10px rgba(0, 0, 0, 0.25);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1em;
+    height: 95%;
+    color: #fff;
+
+    font-family: Red Hat Display, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-address {
+    color: #DFDFDF;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.card-price {
+    color: #DFDFDF;
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+
+/*EOF hotel-list-card styling*/
+
+
