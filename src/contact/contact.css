@@ -13,11 +13,39 @@
     font-weight: 600;
 }
 
-input {
+
+
+input, textarea, button{
     /*margin-left: 0.4em;*/
     background-color: #eae9e9;
     border-radius: 0.3em;
     margin: 0;
     /*margin-bottom: 0.8em;*/
+    border: 0;
+    outline: 0;
+    font-size: 1em;
 }
 
+
+#email {
+    min-width: 98%;
+}
+
+#message {
+    min-width: 98%;
+    min-height: 98%;
+}
+
+#contact-submit {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    background: linear-gradient(233deg, #F8A3FF 12.86%, #988FFF 76.84%);
+
+}
+
+#contact-submit:hover {
+    cursor: pointer;
+}

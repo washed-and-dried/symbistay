@@ -49,8 +49,8 @@
 </div>
 
 <div class="contact-container">
-    <form action="" method="get">
-    <table border="1">
+    <form method="get">
+    <table border="0" cellspacing="5em">
         <tr>
             <td><label for="firstname">First Name</label></td>
             <td><input type="text" name="firstname" id="firstname"></td>
@@ -59,15 +59,17 @@
         </tr>
         <tr>
             <td><label for="email">Email Address</label></td>
-            <td colspan="3"><input type="email" name="email" id="email"></td>
+            <td colspan="2"><input type="email" name="email" id="email"></td>
 
         </tr>
         <tr>
             <td><label for="message">Message</label></td>
-            <td><input type="text" name="message" id="message"></td>
+            <td colspan="3" rowspan="2"><textarea name="message" id="message" cols="3" rows="3"></textarea></td>
         </tr>
+        <tr></tr>
         <tr>
-            <td><input type="submit" value="Submit"></td>
+            <td></td>
+            <td><button type="button" id="contact-submit">Submit</button></td>
         </tr>
     </table>
     </form>
