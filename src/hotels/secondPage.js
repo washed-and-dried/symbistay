@@ -11,13 +11,13 @@ const FILE_PATH = {
 const trimName = (hotelName) => {
     let s = "";
     hotelName.trim();
-    if (hotelName.length > 21){
+    if (hotelName.length > 21) {
         return hotelName.slice(0, 18) + "...";
     }
     return hotelName;
 }
 
-const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice) => {
+const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice, hotelRating) => {
     const hotelCardDiv = document.createElement("div");
     hotelCardDiv.classList.add("hotel-list-card")
 
@@ -48,16 +48,26 @@ const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice) => 
     hotelImgDiv.append(hotelImgElem, hotelCardTextDiv);
     hotelCardDiv.appendChild(hotelImgDiv);
 
+    //on clicking the div we will show the details for that hotel
+    hotelCardDiv.addEventListener("click", () => {
+        window.location.assign(`../hotel-details/hotel-details.html?name=${hotelName}&price=${hotelPrice}&rating=${hotelRating}&subtitle=${hotelSubtitle}&image=${hotelImg}`);
+    })
+
     return hotelCardDiv;
 }
 
 const decideCountryName = (file) => {
     switch (file) {
-        case FILE_PATH.BERLIN: return "Berlin";
-        case FILE_PATH.PARIS: return "Paris";
-        case FILE_PATH.MADRID: return "Madrid";
-        case FILE_PATH.LONDON: return "London";
-        case FILE_PATH.ROME: return "Rome";
+        case FILE_PATH.BERLIN:
+            return "Berlin";
+        case FILE_PATH.PARIS:
+            return "Paris";
+        case FILE_PATH.MADRID:
+            return "Madrid";
+        case FILE_PATH.LONDON:
+            return "London";
+        case FILE_PATH.ROME:
+            return "Rome";
     }
 }
 
@@ -83,12 +93,21 @@ const generateHotelList = async () => {
     const hotelGridDiv = document.querySelector(".centerProp");
     hotelGridDiv.innerHTML = null;
 
-    for (let i = 0; i < noOfHotels; i++){
+    for (let i = 0; i < noOfHotels; i++) {
         const currentHotel = hotelsList[i];
-        hotelGridDiv.appendChild(createHotelListCard(currentHotel.title, currentHotel.thumbnail, currentHotel.subtitles[1], currentHotel.price.value));
+        hotelGridDiv.appendChild(createHotelListCard(
+            currentHotel.title,
+            currentHotel.thumbnail,
+            currentHotel.subtitles[1],
+            currentHotel.price.value,
+            currentHotel.rating
+        ));
     }
 }
 
 generateHotelList();
 
-document.querySelector(".next-hotel-btn").addEventListener("click", () => {counter++; generateHotelList()})
+document.querySelector(".next-hotel-btn").addEventListener("click", () => {
+    counter++;
+    generateHotelList()
+})

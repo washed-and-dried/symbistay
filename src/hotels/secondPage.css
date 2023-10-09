@@ -340,9 +340,16 @@ display: none;
 .hotel-list-card {
     padding: 0;
     width: 14.0625rem;
-    /*height: 14.0625rem;*/
-    /*flex-shrink: 0;*/
     margin-bottom: 1em;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 1px 1px 3px #e8e8e8;
+    border-radius: 0.5em;
+}
+
+.hotel-list-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 3px #c7c7c7;
 }
 
 .bg-img img {
