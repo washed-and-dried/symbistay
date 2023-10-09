@@ -58,11 +58,11 @@
                 <div class="search-text"><label for="location">Where to?</label></div>
                 <div class="search-option-text">
                     <select name="" id="location">
-                        <option value="Bali">Berlin</option>
-                        <option value="Bali">Paris</option>
-                        <option value="Bali">London</option>
-                        <option value="Bali">Madrid</option>
-                        <option value="Bali">Rome</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Paris">Paris</option>
+                        <option value="London">London</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Rome">Rome</option>
                     </select>
                 </div>
             </div>
@@ -92,7 +92,7 @@
 </div>
 <script>
     document.querySelector(".search-icon").addEventListener("click", () => {
-        window.location = "./hotels/secondPage.html";
+        window.location = `./hotels/secondPage.html?city=${document.getElementById("location").value}`;
     })
 </script>
 

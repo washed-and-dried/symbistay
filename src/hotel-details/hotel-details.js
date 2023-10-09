@@ -11,7 +11,7 @@ const extractDetails = (queryParameter) => {
     return {name, price, rating, subtitle, image};
 }
 
-const trimWebSpaces= (string) => {
+const trimWebSpaces = (string) => {
     return decodeURI(string);
 }
 
@@ -48,7 +48,7 @@ const trimWebSpaces= (string) => {
     hotelDetailsContainer.appendChild(hotelPrice);
 
     //adding the feature and button
-    hotelDetailsContainer.innerHTML += "<div class=\"hotel-features\">\n                <div class=\"hotel-features-heading\">Features</div>\n                <ul class=\"hotel-features-list\">\n                    <li class=\"hotel-features-list-item\">Tiny</li>\n                    <li class=\"hotel-features-list-item\">individual Room with private Bathroom</li>\n                </ul>\n            </div>\n            <div class=\"hotel-book\">\n                <div class=\"search-item-box\">\n                    <div class=\"search-text\"><label for=\"guests\">Guests</label></div>\n                    <div class=\"search-option-text\"><input type=\"number\" name=\"\" id=\"guests\" placeholder=\"1\"></div>\n                </div>\n                <a href=\"\">\n                    <div class=\"nav-text active\">Book Now</div>\n                </a>\n                <div class=\"hotel-book-button\"></div>\n            </div>"
+    hotelDetailsContainer.innerHTML += "<div class=\"hotel-features\">\n                <div class=\"hotel-features-heading\">Features</div>\n                <ul class=\"hotel-features-list\">\n                    <li class=\"hotel-features-list-item\">Tiny</li>\n                    <li class=\"hotel-features-list-item\">individual Room with private Bathroom</li>\n                </ul>\n            </div>\n            <div class=\"hotel-book\">\n                <div class=\"search-item-box\">\n                    <div class=\"search-text\"><label for=\"guests\">Guests</label></div>\n                    <div class=\"search-option-text\"><input type=\"number\" name=\"\" id=\"guests\" placeholder=\"1\"></div>\n                </div>\n                <a>\n                    <div class=\"nav-text active\">Book Now</div>\n                </a>\n                <div class=\"hotel-book-button\"></div>\n            </div>"
     const hotelFeaturesList = document.querySelector(".hotel-features-list");
     const hotelFeature = document.createElement("li");
     hotelFeature.classList.add("hotel-features-list-item");
