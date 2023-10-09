@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="consistent/nav-style.css">
-    <link rel="stylesheet" href="consistent/utility.css">
-    <link rel="shortcut icon" href="../assets/img/dragonjammies.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/consistent/nav-style.css">
+    <link rel="stylesheet" href="src/consistent/utility.css">
+    <link rel="shortcut icon" href="assets/img/dragonjammies.png" type="image/x-icon">
 
-    <script src="./index.js" defer></script>
+    <script src="src/index.js" defer></script>
     <title>Home</title>
 </head>
 <body>
@@ -24,9 +24,9 @@
     </div>
     <div id="nav-items">
         <a href="./index.html"><div class="nav-text active">Home</div></a>
-        <a href="hotels/secondPage.html"><div class="nav-text">Hotels</div></a>
-        <a href="contact/contact.html"><div class="nav-text">Contact</div></a>
-        <a href="developers/developers.html"><div class="nav-text">Profile</div></a>
+        <a href="src/hotels/secondPage.html"><div class="nav-text">Hotels</div></a>
+        <a href="src/contact/contact.html"><div class="nav-text">Contact</div></a>
+        <a href="src/developers/developers.html"><div class="nav-text">Profile</div></a>
     </div>
 </div>
 <div id="profile">
@@ -92,7 +92,7 @@
 </div>
 <script>
     document.querySelector(".search-icon").addEventListener("click", () => {
-        window.location = `./hotels/secondPage.html?city=${document.getElementById("location").value}`;
+        window.location = `src/hotels/secondPage.html`;
     })
 </script>
 
@@ -179,10 +179,10 @@
     <div class="footer-cont">
         <div class="footer-title">EXPLORE</div>
 
-        <div class="footer-col"><a href="privacy-policy/privacy-policy.html">Privacy Policy</a></div>
-        <div class="footer-col"><a href="tos/tos.html">Terms of Service</a></div>
-        <div class="footer-col"><a href="developers/developers.html">Developers</a></div>
-        <div class="footer-col"><a href="contributing/contributing.html">Contributing</a></div>
+        <div class="footer-col"><a href="src/privacy-policy/privacy-policy.html">Privacy Policy</a></div>
+        <div class="footer-col"><a href="src/tos/tos.html">Terms of Service</a></div>
+        <div class="footer-col"><a href="src/developers/developers.html">Developers</a></div>
+        <div class="footer-col"><a href="src/contributing/contributing.html">Contributing</a></div>
     </div>
 </div>
 
