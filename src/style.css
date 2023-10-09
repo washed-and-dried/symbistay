@@ -58,4 +58,9 @@ body {
 #btm-nav {
     margin-bottom: 5em;
 }
+
+#location {
+    border: 0;
+    outline: 0;
+}
 /*EOF bottom nav*/
