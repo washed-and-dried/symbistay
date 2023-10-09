@@ -33,15 +33,18 @@ body {
 }
 
 .images {
-    padding-left: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 1em;
 }
 
 .images img {
     height: 14em;
     object-fit: cover;
     width: 180px;
-    border-radius: 4%;
-    padding-top: 1em;
+    border-radius: 1em;
 }
 
 
@@ -64,3 +67,8 @@ body {
     outline: 0;
 }
 /*EOF bottom nav*/
+
+input {
+    border: 0;
+    outline: 0;
+}
