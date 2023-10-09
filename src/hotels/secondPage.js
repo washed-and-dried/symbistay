@@ -71,11 +71,31 @@ const decideCountryName = (file) => {
     }
 }
 
+const decideFileByCountryName = (name) => {
+    switch (name) {
+        case "Paris":
+            return FILE_PATH.PARIS;
+        case "London":
+            return FILE_PATH.LONDON;
+        case "Madrid":
+            return FILE_PATH.MADRID;
+        case "Rome":
+            return FILE_PATH.ROME;
+        case "Berlin":
+            return FILE_PATH.BERLIN;
+    }
+}
+
 //counter for next button
 let counter = 1;
 
 const generateHotelList = async () => {
-    const file = FILE_PATH.BERLIN;
+    const citySelection = document.getElementById("city-selection");
+    citySelection.addEventListener("change", () => {
+        generateHotelList()
+    });
+
+    const file = decideFileByCountryName(citySelection.value);
 
     //set the file name according to the file we are reading from
     document.querySelector(".mid-text").innerText = decideCountryName(file);
