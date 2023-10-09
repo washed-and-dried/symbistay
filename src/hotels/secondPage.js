@@ -38,7 +38,7 @@ const testImage = (imgSrc) => {
 
 const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice, hotelRating) => {
     const hotelCardDiv = document.createElement("div");
-    hotelCardDiv.classList.add("hotel-list-card")g
+    hotelCardDiv.classList.add("hotel-list-card")
 
     const hotelImgDiv = document.createElement("div");
     hotelImgDiv.classList.add("bg-img");
