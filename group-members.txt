@@ -10,3 +10,8 @@ Bharat Kishore Maheshwari   - 23030124019
 Division B
 Soham Marot.                - 23030124051
 Kunal Gupta                 - 23030124070
+
+
+!!IMPORTANT!!
+Running this project directly from the index.html file breaks the Hotels page due to the CORS policy.
+PLEASE run this on a local server (live-server, etc).
