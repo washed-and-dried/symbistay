@@ -1,11 +1,11 @@
 //adding the json data to the second page hotels list
 
 const FILE_PATH = {
-    BERLIN: "../../assets/jsonData/Berlin.json",
-    LONDON: "../../assets/jsonData/London.json",
-    MADRID: "../../assets/jsonData/Madrid.json",
-    PARIS: "../../assets/jsonData/Paris.json",
-    ROME: "../../assets/jsonData/Rome.json"
+    BERLIN: "/assets/jsonData/Berlin.json",
+    LONDON: "/assets/jsonData/London.json",
+    MADRID: "/assets/jsonData/Madrid.json",
+    PARIS: "/assets/jsonData/Paris.json",
+    ROME: "/assets/jsonData/Rome.json"
 }
 
 const trimName = (hotelName) => {
