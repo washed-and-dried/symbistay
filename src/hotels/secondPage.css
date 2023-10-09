@@ -19,7 +19,7 @@ body {
     margin-inline: 0;
 
     margin: 0;
-    padding: 0 0 20vh 0;
+    padding: 0;
 }
 
 .top-nav a {
@@ -420,7 +420,7 @@ display: none;
 
 .footer {
     bottom: 0;
-    position: fixed;
+    /*position: fixed;*/
     margin-top: 5vh;
 
     background-color: #EFE7E7;

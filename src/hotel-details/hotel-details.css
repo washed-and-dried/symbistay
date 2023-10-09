@@ -315,7 +315,7 @@ input, option {
 
 .footer {
     bottom: 0;
-    position: fixed;
+    /*position: fixed;*/
     margin-top: 5vh;
 
     background-color: #EFE7E7;

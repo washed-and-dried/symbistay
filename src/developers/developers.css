@@ -11,10 +11,11 @@ body {
     background-size: cover;
     background-position-y: center;
     display: flex;
+
     flex-direction: column;
     align-items: center;
-    /*justify-content: space-between;*/
-    gap: 12vh;
+    justify-content: space-between;
+    /*gap: 12vh;*/
     /*height: 100vh;*/
     color: #000;
     margin: 0;
@@ -315,7 +316,7 @@ input, option {
 
 .footer {
     bottom: 0;
-    position: fixed;
+    /*position: fixed;*/
     margin-top: 5vh;
 
     background-color: #EFE7E7;
