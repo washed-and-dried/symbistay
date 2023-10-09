@@ -26,16 +26,26 @@ const trimName = (hotelName) => {
     return hotelName;
 }
 
+const testImage = (imgSrc) => {
+    const testImg = new Image();
+    testImg.src = imgSrc;
+    testImg.onerror = () => {
+        imgSrc = "https://a0.muscache.com/im/pictures/b9bc653d-df43-4f91-8162-0be5c912a3b4.jpg?im_w=720";
+    }
+
+    return imgSrc;
+}
+
 const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice, hotelRating) => {
     const hotelCardDiv = document.createElement("div");
-    hotelCardDiv.classList.add("hotel-list-card")
+    hotelCardDiv.classList.add("hotel-list-card")g
 
     const hotelImgDiv = document.createElement("div");
     hotelImgDiv.classList.add("bg-img");
 
     const hotelImgElem = document.createElement("img");
     hotelImgElem.setAttribute("loading", "lazy");
-    hotelImgElem.setAttribute("src", hotelImg);
+    hotelImgElem.setAttribute("src", testImage(hotelImg));
     hotelImgDiv.setAttribute("alt", "hotel image");
 
     const hotelCardTextDiv = document.createElement("div");
@@ -137,7 +147,9 @@ const generateHotelList = async () => {
 
 generateHotelList();
 
+
 document.querySelector(".next-hotel-btn").addEventListener("click", () => {
     counter++;
     generateHotelList()
-})
+});
+
