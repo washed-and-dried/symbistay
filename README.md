@@ -1,5 +1,5 @@
-# symbistay
-symbistay.netlify.app
+# [symbistay](symbistay.netlify.app) (hosted webapp)
+[symbistay.netlify.app](symbistay.netlify.app)
 
 - [x] text file with all names
 - [x] home page images
