@@ -25,6 +25,7 @@ const createHotelListCard = (hotelName, hotelImg, hotelSubtitle, hotelPrice, hot
     hotelImgDiv.classList.add("bg-img");
 
     const hotelImgElem = document.createElement("img");
+    hotelImgElem.setAttribute("loading", "lazy");
     hotelImgElem.setAttribute("src", hotelImg);
     hotelImgDiv.setAttribute("alt", "hotel image");
 

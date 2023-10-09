@@ -38,7 +38,7 @@ const trimWebSpaces= (string) => {
     hotelRatingContainer.innerHTML = "<svg width=\"22\" height=\"20\" viewBox=\"0 0 22 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <g clip-path=\"url(#clip0_132_172)\">\n                        <path d=\"M12.1038 0.689063C11.9014 0.267969 11.4736 0 11.0038 0C10.534 0 10.11 0.267969 9.90379 0.689063L7.44789 5.75367L1.96316 6.56524C1.50483 6.63414 1.12289 6.95571 0.981567 7.39594C0.840247 7.83617 0.95483 8.32235 1.2833 8.64774L5.26316 12.5945L4.32358 18.1721C4.24719 18.6315 4.43816 19.0985 4.81629 19.3703C5.19441 19.6421 5.69476 19.6766 6.10726 19.4584L11.0076 16.8361L15.908 19.4584C16.3205 19.6766 16.8208 19.6459 17.1989 19.3703C17.5771 19.0947 17.768 18.6315 17.6916 18.1721L16.7482 12.5945L20.7281 8.64774C21.0566 8.32235 21.175 7.83617 21.0298 7.39594C20.8847 6.95571 20.5066 6.63414 20.0482 6.56524L14.5597 5.75367L12.1038 0.689063Z\" fill=\"#858282\"/>\n                    </g>\n                    <defs>\n                        <clipPath id=\"clip0_132_172\">\n                            <rect width=\"22\" height=\"19.6\" fill=\"white\"/>\n                        </clipPath>\n                    </defs>\n                </svg>"
 
     const hotelRatingText = document.createElement("div");
-    hotelRatingText.innerText = details.rating;
+    hotelRatingText.innerText = trimWebSpaces(details.rating);
     hotelRatingContainer.appendChild(hotelRatingText);
     hotelDetailsContainer.appendChild(hotelRatingContainer);
 

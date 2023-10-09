@@ -479,3 +479,27 @@ display: none;
 
 /*EOF Footer Style*/
 
+/*city selector styling*/
+
+#city-selection {
+    outline: 0;
+    border:0;
+    padding: 0.15em;
+}
+
+/*EOF city selector styling*/
+
+.hotel-list-card {
+    animation: popup 0.75s ease-in-out;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(5%);
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
