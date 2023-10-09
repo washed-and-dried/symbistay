@@ -1,4 +1,5 @@
 # symbistay
+symbistay.netlify.app
 
 - [x] text file with all names
 - [x] home page images
