@@ -2,7 +2,7 @@
 
 - [x] text file with all names
 - [x] home page images
-- [ ] go through the entire site
+- [x] go through the entire site
 
 ### IMPORTANT
 Running this project directly from the index.html file breaks the Hotels page due to the CORS policy.
