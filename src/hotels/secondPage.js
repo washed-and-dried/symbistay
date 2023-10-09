@@ -1,8 +1,10 @@
 let cityToBeSelected = window.location.search;
-console.log(cityToBeSelected);
-cityToBeSelected = cityToBeSelected.slice(6, cityToBeSelected.length);
-console.log(cityToBeSelected);
-
+if(cityToBeSelected !== ""){
+    cityToBeSelected = cityToBeSelected.slice(6, cityToBeSelected.length);
+}
+else {
+    cityToBeSelected = "Rome";
+}
 document.getElementById("city-selection").value = cityToBeSelected;
 
 //adding the json data to the second page hotels list
